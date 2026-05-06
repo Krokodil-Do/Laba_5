@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Резюме</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="resume-wrapper">
+        <header class="header">
+                <button id="theme-toggle" class="theme-btn">🌙 Темна тема</button>
+                
+                <h1>Галамай Олег</h1>
+                <h2>Студент спеціальності «Кібербезпека»</h2>
+            </header>
+            <h1>Галамай Олег</h1>
+            <h2>Студент спеціальності «Кібербезпека»</h2>
+        </header>
+
+        <div class="content-wrapper">
+            <aside class="sidebar">
+                <section class="info-block">
+                    <h3>Контакти</h3>
+                    <p>м. Львів, Україна</p>
+                    <p><a href="mailto:oleh.halamai.kb.2024@lpnu.ua">oleh.halamai.kb.2024@lpnu.ua</a></p>
+                </section>
+
+                <section class="info-block">
+                    <h3>Освіта</h3>
+                    <p><strong>НУ "Львівська політехніка"</strong></p>
+                    <p>Кібербезпека (2 курс)</p>
+                    <p>2024 - 2028</p>
+                </section>
+
+                <section class="info-block">
+                    <h3>Навички</h3>
+                    <ul class="skills-list">
+                        <li>HTML / CSS</li>
+                        <li>Python</li>
+                        <li>Git / GitHub</li>
+                        <li>SQL</li>
+                    </ul>
+                </section>
+            </aside>
+
+            <main class="main-content">
+                <section class="info-block">
+                    <h3>Мета</h3>
+                    <p>Розвиватися у сфері інформаційної безпеки, застосовувати отримані знання на практиці та брати участь у розробці безпечних веб-застосунків. Прагну долучитися до команди професіоналів для вдосконалення навичок з програмування та захисту даних.</p>
+                </section>
+
+                <section class="info-block">
+                    <h3>Навчальні проєкти</h3>
+                    <div class="project">
+                        <p class="date">БЕРЕЗЕНЬ 2026</p>
+                        <h4>Eco Ukraine | <span class="role">Учасник команди</span></h4>
+                        <p>Студентський проект з інвестування в зелену енергетику.</p>
+                    </div>
+                </section>
+                
+                <section class="info-block">
+                    <h3>Відгуки роботодавців</h3>
+                    <div id="comments-container">
+                        <p style="font-style: italic; color: #777;">Завантаження відгуків</p>
+                    </div>
+                </section>
+            </main>
+        </div>
+        
+        <footer style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ccc; text-align: center;">
+            </footer>
+    </div>
+
+    <div id="feedback-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Залишіть свій відгук</h2>
+            <form action="https://formspree.io/f/" method="POST">
+                <label for="fname">Ім'я:</label>
+                <input type="text" id="fname" name="name" required>
+
+                <label for="femail">Email:</label>
+                <input type="email" id="femail" name="email" required>
+
+                <label for="fphone">Номер телефону:</label>
+                <input type="tel" id="fphone" name="phone" required>
+
+                <label for="fmessage">Повідомлення:</label>
+                <textarea id="fmessage" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="submit-btn">Відправити</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
